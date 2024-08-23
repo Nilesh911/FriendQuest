@@ -1,12 +1,18 @@
 import React from 'react'
 import './footer.css'
+import logo1 from '../../utils/images/logo1.png';
+import facebook from '../../utils/images/facebook.svg';
+import instagram from '../../utils/images/instagram.svg';
+// import linkedin from'../../utils/images/linkdin.svg';
+import youtube from'../../utils/images/youtube.svg';
+import { Link } from 'react-router-dom';
 
 const footer = () => {
   return (
     <div id="footercontainer">
         <div id="footeraboutus">
             <div className="footerhead-div">
-                <img src="/utils/images/logo1.png"/>
+                <img src={logo1}/>
                 <h1 className="footerhead">FriendQuest</h1>
             </div>
             <p className="footerpara1">About Friend Quest:</p>
@@ -21,20 +27,20 @@ const footer = () => {
         <div id="footerquicklinks">
             <p>Quick Links</p>
             <ul>
-                {/* <li><a href="">FAQs</a></li>
+                <li><a href="">FAQs</a></li>
                 <Link to='/about'><li>About Us</li></Link>
                 <Link to='/investor'><li>Privacy Policy</li></Link>
                 <Link to='/startup'><li>Terms & Conditions</li></Link>
-                <Link to='/contact'><li>Contact Us</li></Link> */}
+                <Link to='/contact'><li>Contact Us</li></Link>
             </ul>
         </div>
         <div id="footerfollowus">
             <p>Follow us on:</p>
             <div className="footerfollowus-div">
-                {/* <a href=""><img src={facebook} alt="facebook"/></a>
+                <a href=""><img src={facebook} alt="facebook"/></a>
                 <a href=""><img src={instagram} alt="instagram"/></a>
-                <a href=""><img src={linkedin} alt="linkdin"/></a>
-                <a href=""><img src={youtube} alt="linkdin"/></a> */}
+                {/* <a href=""><img src={linkedin} alt="linkdin"/></a> */}
+                <a href=""><img src={youtube} alt="youtube"/></a>
             </div>
         </div>
         <div id="footercontactus">
