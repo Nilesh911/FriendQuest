@@ -1,15 +1,10 @@
 import React from 'react'
 import './home.css'
-// import CarouselSlide from '../../components/carousel/carousel'
-// import HowItWorks from '../../components/Works/Works'
-
-function Main() {
+import Carousel from '../../components/carousel/carousel'
+const home = () => {
   return (
-    <>
-     {/* <CarouselSlide/> */}
-     {/* <HowItWorks/> */}
-    </>
+    <Carousel/>
   )
 }
 
-export default Main
+export default home
