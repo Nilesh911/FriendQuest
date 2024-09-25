@@ -4,9 +4,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
 require('./Models/db');
-const AuthRouter = require('./Router/AuthRouter');
+const AuthRouter = require('./Routes/AuthRouter');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 app.get('/ping',(req, res) =>{
     res.send('PONG');
@@ -15,7 +15,7 @@ app.get('/ping',(req, res) =>{
 app.use(bodyParser.json());
 app.use(cors())
 
-app.use('/auth',AuthRouter)
+app.use('/auth',AuthRouter);
 
 
 app.listen(PORT, () =>{
