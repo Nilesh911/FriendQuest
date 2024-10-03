@@ -23,7 +23,7 @@ const navbar = () => {
               <Link to='/'>About</Link>
             </li>
             <li>
-              <Link to='/'>Login</Link>
+              <Link to='/login'>Login</Link>
             </li>
             <li>
               <Link to='/'>Sign Up</Link>

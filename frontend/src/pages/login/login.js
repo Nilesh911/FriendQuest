@@ -1,12 +1,35 @@
-import React from 'react'
-import './login.css'
+import './Login.css';
+import {Link} from 'react-router-dom';
 
-const login = () => {
-  return (
-    <div>
-      <h1>awfawfgase jajhgh hggh</h1>
-    </div>
-  )
+function Login(){
+    return (
+        <main className='login-main'>
+            <div className='login'>
+
+                <div className='login-text'>
+                    <h1>Login</h1>
+                    <Link to="/Register" className='login-text2'>Sign in to continue</Link>
+                </div>
+
+                <div className='login-form'>
+                    <div className="form-group col mb-3" >
+                        <label class="form-label">EMAIL</label>
+                        <input class="form-control" type="text"/>
+                    </div>
+
+                    <div className="form-group col mb-3" >
+                        <label class="form-label">PASSWORD</label>
+                        <input class="form-control"/>
+                    </div>
+                </div>
+
+                <div className="login-button">
+                    <button>Log In</button>
+                </div>
+
+            </div>
+        </main>
+    );
 }
 
-export default login
+export default Login;
